@@ -19,7 +19,7 @@ This project aims to reproduce and extend an existing credit risk analysis workf
 ## Source Repository (R Implementation)
 
 The original R-based project is available here:
-https://github.com/KevRB3/Deuces/tree/main](https://github.com/abdallah-ftouh/tassks-.git)
+https://github.com/KevRB3/Deuces/tree/main
 
 This repository will serve as the baseline for:
 
