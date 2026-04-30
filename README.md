@@ -42,11 +42,11 @@ https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
 Extend the analysis with additional models or evaluation methods if appropriate
 
 ## Methodology
-# Review and document the original R workflow
-# Recreate data preprocessing steps in Python
-# Implement equivalent machine learning models
-# Validate outputs against the original results
-# Document the full pipeline for reproducibility
+Review and document the original R workflow
+Recreate data preprocessing steps in Python
+Implement equivalent machine learning models
+Validate outputs against the original results
+Document the full pipeline for reproducibility
 
 ## Project Status
 This repository has been created for the group course project.  
