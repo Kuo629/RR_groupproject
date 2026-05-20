@@ -34,7 +34,7 @@ The project focuses on:
 2. Identifying which parts of the original project were easy or difficult to reproduce.
 3. Documenting missing information, assumptions, and technical challenges.
 4. Creating a clean and user-friendly Python project structure.
-5. Making the project fully reproducible through GitHub, `requirements.txt`, and Docker.
+5. Making the project fully reproducible through GitHuband `requirements.txt`.
 
 ---
 
@@ -81,8 +81,6 @@ RR_groupproject/
 │
 ├── README.md
 ├── requirements.txt
-├── Dockerfile
-├── .dockerignore
 ├── main.py
 ├── loan.py
 ├── loan_pro.ipynb
@@ -121,7 +119,6 @@ RR_groupproject/
 | `data/` | Contains the dataset |
 | `outputs/figures/` | Stores generated plots |
 | `requirements.txt` | Lists the Python packages needed to run the project |
-| `Dockerfile` | Allows the project to be run in a reproducible Docker environment |
 
 ---
 
@@ -164,23 +161,6 @@ python main.py
 
 ---
 
-## Running with Docker
-
-Docker can be used to run the project in a clean and reproducible environment.
-
-### 1. Build the Docker image
-
-```bash
-docker build -t loan-project .
-```
-
-### 2. Run the Docker container
-
-```bash
-docker run --rm loan-project
-```
-
----
 
 ## Required Software
 
@@ -192,7 +172,6 @@ The project was developed using:
 - matplotlib
 - seaborn
 - scikit-learn
-- Docker
 
 Exact package versions can be found in `requirements.txt`.
 
@@ -226,7 +205,7 @@ During the reproduction process, we faced several challenges:
 - Categorical variables required explicit encoding before model training.
 - Missing values had to be handled carefully, especially before training the Random Forest model.
 - The original workflow was mostly script-based, so we reorganized it into separate Python modules.
-- Running plots inside Docker required additional attention because Docker does not open graphical windows by default.
+- Plots were saved as files so the results could be reviewed after running the script.
 
 ---
 
@@ -290,7 +269,7 @@ outputs/figures/
 | Ahmet Hasanov | Documentation support, review of reproducibility process, presentation preparation |
 | Kuo Zhang | Repository setup, GitHub management, project coordination |
 | Nijat Abiyev | Dataset review, testing, and result checking |
-| Yuceltan Ebiri | Python translation, modular code structure, machine learning implementation, Docker setup |
+| Yuceltan Ebiri | Python translation, modular code structure, machine learning implementation, environment setup |
 
 ---
 
@@ -305,7 +284,6 @@ The repository history includes updates related to:
 - Modular code organization
 - Dataset integration
 - Documentation improvements
-- Docker support
 - Final reproducibility preparation
 
 ---
@@ -313,7 +291,7 @@ The repository history includes updates related to:
 ## Project Status
 
 The project is prepared as a reproducible Python version of the original R analysis.  
-The current version includes code, documentation, dataset handling, model implementation, and Docker support.
+The current version includes code, documentation, dataset handling, model implementation, and local environment setup.
 
 ---
 
