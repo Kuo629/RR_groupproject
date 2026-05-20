@@ -42,7 +42,7 @@ class DecisionTreeLoanModel:
         )
         plt.title("Decision Tree Structure")
         plt.savefig("outputs/figures/decision_tree.png")
-        plt.show()
+        plt.close()
 
 
 class RandomForestLoanModel:
@@ -83,4 +83,4 @@ class RandomForestLoanModel:
         plt.yticks(range(len(indices)), [feature_names[i] for i in indices])
         plt.xlabel("Relative Importance")
         plt.savefig("outputs/figures/random_forest_feature_importance.png")
-        plt.show()
+        plt.close()

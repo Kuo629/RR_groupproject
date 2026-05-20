@@ -173,7 +173,7 @@ The project was developed using:
 - seaborn
 - scikit-learn
 
-Exact package versions can be found in `requirements.txt`.
+Minimum package versions can be found in `requirements.txt`.
 
 ---
 

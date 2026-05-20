@@ -22,14 +22,14 @@ class LoanVisualizer:
         )
         plt.title("Histogram of Age by Education")
         plt.savefig("outputs/figures/age_by_education.png")
-        plt.show()
+        plt.close()
 
     def plot_numeric_histograms(self):
         numeric_cols = self.df.select_dtypes(include=[np.number]).columns
         self.df[numeric_cols].hist(figsize=(12, 10), bins=20)
         plt.suptitle("Histograms for all Numeric Data")
         plt.savefig("outputs/figures/numeric_histograms.png")
-        plt.show()
+        plt.close()
 
     def plot_income_by_home_ownership_gender(self):
         plt.figure(figsize=(10, 6))
@@ -42,7 +42,7 @@ class LoanVisualizer:
         )
         plt.title("Income by Home Ownership and Gender")
         plt.savefig("outputs/figures/income_home_ownership_gender.png")
-        plt.show()
+        plt.close()
 
     def plot_loan_intent(self):
         order = self.df["loan_intent"].value_counts().index
@@ -58,7 +58,7 @@ class LoanVisualizer:
         plt.title("Count for Loan Intent")
         plt.xticks(rotation=45)
         plt.savefig("outputs/figures/loan_intent_count.png")
-        plt.show()
+        plt.close()
 
     def plot_all(self):
         self.plot_age_by_education()
